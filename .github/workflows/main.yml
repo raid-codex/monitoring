@@ -12,12 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - name: Run TestCafe
+    - name: Chrome
       uses: DevExpress/testcafe-action@latest
       with:
         version: "1.7.1"
         args: chrome tests/
-    - name: Run TestCafe
+    - name: Firefox
       uses: DevExpress/testcafe-action@latest
       with:
         version: "1.7.1"
