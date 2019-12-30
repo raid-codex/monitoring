@@ -22,4 +22,4 @@ jobs:
       uses: DevExpress/testcafe-action@latest
       with:
         version: "1.7.1"
-        args: $
+        args: $args
