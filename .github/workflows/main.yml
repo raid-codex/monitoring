@@ -2,7 +2,8 @@ name: CI
 
 on:
   push:
-    branches: "*"
+    paths:
+    - '**'
   schedule:
     - cron: "*/15 * * * *"
 
