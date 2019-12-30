@@ -15,8 +15,8 @@ test("Champions have loaded", async t => {
         .expect(championCard).ok
 });
 
-test("Champions have their thumbnail as image", async t => {
+/*test("Champions have their thumbnail as image", async t => {
     const championImage = Selector(".ng-champion-list .champion-single img.champion-img");
     await t
         .expect(championImage.getAttribute("src")).contains("/img/hashed-img");
-});
+});*/
