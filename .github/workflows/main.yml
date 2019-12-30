@@ -9,17 +9,16 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        args:
-          - "chrome tests/"
-          - "firefox tests/"
     steps:
     - uses: actions/checkout@v1
     - name: Run TestCafe
       uses: DevExpress/testcafe-action@latest
       with:
         version: "1.7.1"
-        args: $args
+        args: chrome tests/
+    - name: Run TestCafe
+      uses: DevExpress/testcafe-action@latest
+      with:
+        version: "1.7.1"
+        args: firefox tests/
