@@ -12,11 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - name: Chrome
-      uses: DevExpress/testcafe-action@latest
-      with:
-        version: "1.7.1"
-        args: chrome tests/
     - name: Firefox
       uses: DevExpress/testcafe-action@latest
       with:
