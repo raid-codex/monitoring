@@ -1,0 +1,17 @@
+{
+  "name": "monitoring",
+  "version": "1.0.0",
+  "description": "Monitoring raid-codex.com",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Geoffrey Bauduin <bauduin.geo@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "testcafe": "^1.7.1"
+  }
+}
