@@ -1,0 +1,19 @@
+name: CI
+
+on:
+  push:
+    paths:
+    - '**'
+  schedule:
+    - cron: "*/15 * * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Firefox
+      uses: DevExpress/testcafe-action@latest
+      with:
+        version: "1.7.1"
+        args: firefox tests/
