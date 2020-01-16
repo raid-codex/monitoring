@@ -1,11 +1,11 @@
-name: CI
+name: Periodic testcafe
 
 on:
   push:
     paths:
     - '**'
-  schedule:
-    - cron: "*/15 * * * *"
+  #schedule:
+  #  - cron: "*/15 * * * *"
 
 jobs:
   build:
